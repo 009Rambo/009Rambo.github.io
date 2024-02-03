@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <style>
+
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: hwb(0 97% 2%);
+      margin-left: 0;
+      padding: 15px;
+    }
+
+    /* Add responsive styling for smaller screens */
+   @media (max-width: 600px) {
+    body {
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+    }
+
+    .section-spacing {
+    margin-bottom: 150px; /* Adjust the margin-bottom to leave the desired space */
+    }
+
+    header {
+      /*background-color: #0a0101;*/
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 100%;
+      margin: 0.5;
+      /*background-color: #0a0101;*/
+      padding: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      display: block;
+      max-width: 200px;
+      height: 400px; /* Note: This should have a unit, like px, to be valid */
+      margin:0  auto;
+      border-radius: 0;
+    }
+
+    .man {
+      display: block;
+      /*position: absolute;*/
+      width: 100px; /* Set the width of the image */
+      height: 100px; /* Maintain aspect ratio */
+      bottom: 10px; /* Adjust bottom position */
+      right: 10px; /* Adjust right position */
+    }
+
+    h1 {
+      margin: 0;
+      color: #31c467;
+    }
+    h2 {
+      margin-top: 10px;
+      font-weight: lighter;
+      color: rgb(237, 28, 28);
+    }
+    p {
+      margin-bottom: 0;
+      color: #f6f2f2;
+      text-align: justify;
+      line-height: 1;
+
+    }
+
+    .no-spacing {
+      word-spacing: 1;
+      color: #08c7e9;
+    }
+
+     /* Container to position buttons at the top-left side of the page */
+     .button-container {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex; /* Arrange buttons vertically */
+      flex-direction: column; /* Arrange buttons vertically */
+      gap: 10px; /* Add spacing between buttons */
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .icon-container img {
+      max-width: 40px; /* Adjust as needed */
+      height: auto;
+    }
+
+
+
+    /* Style for the buttons */
+    .nav-btn {
+      background-color: #08c7e9;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Copyright section */
+    .copyright {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    body {
+  /* Light mode styles */
+  background-color: hsl(0, 0%, 96%);
+  color: #333;
+  text-decoration: black;
+  p {
+      margin-bottom: 10px;
+      color: hsl(294, 84%, 48%);
+      text-align: justify;
+
+    }
+}
+
+body.dark-mode {
+  /* Dark mode styles */
+  background-color: #222;
+  color: #fff;
+
+  p {
+      margin-bottom: 10px;
+      color: #f6f2f2;
+      text-align: justify;
+
+    }
+
+}
+
+/*
+header, main {
+  /* Adjust header and main section colors for visibility in both modes */
+ /* background-color: #08c7e9;
+  color: #fff;
+}*/
+
+
+/* Add dark mode styles for other elements if needed */
+
+  </style>
+</head>
+<script src="counter.js"></script>
+<body>
+  <header>
+    <h1>Hello :) Welcome to My Portfolio</h1>
+  </header>
+  <main>
+
+    <img src="image0.jpeg" alt="Profile Picture">
+
+
+    <h1>Ramesh Pandey</h1>
+    <h2>Amature Web Developer</h2>
+    <p> Hobbies: Learning | Coding | Creating | Traveling | Cricket</p>
+
+    <!-- About section -->
+    <section id="about" class="section-spacing">
+      <p><strong>About:</strong> <span class="no-spacing"> A second year Software Engineering student at TAMK,
+          Tampere looking for a platform to enhance my knowledge and skills to take a dive into the world of information technology.
+          I describe myself as a quick learner and hardworking person who can easily adopt and integrate in teams.
+
+          </span></p>
+    </section>
+
+    <!-- Buttons linked to corresponding sections -->
+    <div class="button-container">
+      <button class="nav-btn" onclick="scrollToSection('about')">About</button>
+      <button class="nav-btn" onclick="scrollToSection('hobbies')">Hobbies</button>
+      <button class="nav-btn" onclick="scrollToSection('projects')">Projects</button>
+      <button class="nav-btn" onclick="scrollToSection('skills')">Skills</button>
+      <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+      <button id="toggleModeButton" class="nav-btn" onclick="toggleDarkMode()">Dark/Light Mode</button>
+
+    </div>
+
+    <!-- Hobbies section -->
+    <section id="hobbies" class="section-spacing">
+      <!-- Add hobbies section content here if needed -->
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section-spacing">
+      <!-- Add projects section content here if needed -->
+      <h2>Projects</h2>
+
+      <!-- Project 1 -->
+      <h3>Project 1</h3>
+      <p>This is a description of Project 1. Check it out on <a href="project1.html">GitHub</a>.</p>
+
+      <!-- Project 2 -->
+      <h3>Project 2</h3>
+      <p>This is a description of Project 2. Explore it on <a href="project2.html">GitHub</a>.</p>
+
+      <!-- Add more projects as needed -->
+
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+      <!-- Add skills section content here if needed -->
+      <h2>Skills</h2>
+
+      <div  class="icon-container">
+
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" title="Node.js" alt="Node.js" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" title="Express.js" alt="Express.js" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" title="PostgreSQL" alt="PostgreSQL" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original-wordmark.svg" title="Postman" alt="Postman" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" title="Linux" alt="Linux" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original-wordmark.svg" title="Swift" alt="Swift" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" title="Docker" alt="Docker" width="40" height="40"/> &nbsp;
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/> &nbsp;
+      </div>
+
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section-spacing">
+      <p><strong>Contact:</strong> <span style="color: #15de5f;">pandey.ramesh009@gmail.com | ramesh.pandey@tuni.fi</span></p>
+    </section>
+
+     <!-- Especial Note section -->
+    <section id="Note">
+      <p> Note: This page is updated and maintained regularly, so the readers should expect changes. </p>
+
+      <img src="image1.jpeg" alt="MAW" class="man">
+
+    </section>
+
+    <button id="backToTopBtn" onclick="topFunction()" title="Go to top">&#8679; Back to Top</button>
+
+
+    <!-- Copyright section -->
+    <div class="copyright">
+      <p>&copy; All Right Reserved 2023</p>
+      <!-- Add copyright logo image here if needed -->
+    </div>
+  </main>
+
+  <script>
+    // Function to scroll to the specified section by its id
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+<script>
+  // Function to toggle between dark and light mode
+  function toggleDarkMode() {
+    const body = document.body;
+
+    // Toggle the 'dark-mode' class on the body
+    body.classList.toggle('dark-mode');
+
+    // Save the user's preference in local storage
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+  }
+
+  // Check user's preference on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    const body = document.body;
+
+    // Set initial mode based on user's preference
+    if (isDarkMode) {
+      body.classList.add('dark-mode');
+    }
+  });
+</script>
+
+<script>
+// Show or hide the button based on scroll position
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  var btn = document.getElementById("backToTopBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+// Scroll to the top when the button is clicked
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+</body>
+</html>
