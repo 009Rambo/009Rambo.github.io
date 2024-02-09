@@ -117,3 +117,16 @@ body.dark-mode {
         text-align: justify;
     }
 }
+
+body {
+    /* Light mode styles */
+    background-color: hsl(0, 0%, 96%);
+    color: #333;
+    text-decoration: black;
+    p {
+        margin-bottom: 10px;
+        color: hsl(294, 84%, 48%);
+        text-align: justify;
+
+      }
+  }
