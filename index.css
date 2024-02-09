@@ -1,0 +1,119 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: hwb(0 97% 2%);
+    margin-left: 0;
+    padding: 15px;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 600px) {
+    body {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+}
+
+.section-spacing {
+    margin-bottom: 150px; /* Adjust the margin-bottom to leave the desired space */
+}
+
+header {
+    /*background-color: #0a0101;*/
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 100%;
+    margin: 0.5;
+    /*background-color: #0a0101;*/
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    display: block;
+    max-width: 200px;
+    height: 400px; /* Note: This should have a unit, like px, to be valid */
+    margin:0  auto;
+    border-radius: 0;
+}
+
+.man {
+    display: block;
+    /*position: absolute;*/
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Maintain aspect ratio */
+    bottom: 10px; /* Adjust bottom position */
+    right: 10px; /* Adjust right position */
+}
+
+h1 {
+    margin: 0;
+    color: #31c467;
+}
+
+h2 {
+    margin-top: 10px;
+    font-weight: lighter;
+    color: rgb(237, 28, 28);
+}
+
+p {
+    margin-bottom: 0;
+    color: #f6f2f2;
+    text-align: justify;
+    line-height: 1;
+}
+
+.no-spacing {
+    word-spacing: 1;
+    color: #08c7e9;
+}
+
+.button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex; /* Arrange buttons vertically */
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon-container img {
+    max-width: 40px; /* Adjust as needed */
+    height: auto;
+}
+
+.nav-btn {
+    background-color: #08c7e9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+
+    p {
+        margin-bottom: 10px;
+        color: #f6f2f2;
+        text-align: justify;
+    }
+}
