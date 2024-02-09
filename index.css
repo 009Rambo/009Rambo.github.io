@@ -107,17 +107,6 @@ p {
     margin-top: 50px;
 }
 
-body.dark-mode {
-    background-color: #222;
-    color: #fff;
-
-    p {
-        margin-bottom: 10px;
-        color: #f6f2f2;
-        text-align: justify;
-    }
-}
-
 body {
     /* Light mode styles */
     background-color: hsl(0, 0%, 96%);
@@ -129,4 +118,17 @@ body {
         text-align: justify;
 
       }
-  }
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+
+    p {
+        margin-bottom: 10px;
+        color: #f6f2f2;
+        text-align: justify;
+    }
+}
+
+
