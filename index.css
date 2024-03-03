@@ -54,6 +54,13 @@ h1 {
     color: #31c467;
 }
 
+.rounded-text {
+    display: inline-block; /* Ensure the element takes up only as much width as necessary */
+    padding: 10px 20px; /* Add padding with horizontal and vertical values */
+    border: 2px solid black; /* Border around the text */
+    border-radius: 20px; /* Border radius to create rounded edges */
+}
+
 
 .clock-container {
     display: flex;
