@@ -61,15 +61,15 @@ h1 {
     align-items: center;
     flex-direction: column; /* Display clock elements vertically */
     position: absolute; /* Position absolutely within the header */
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 1px;
     padding: 10px; /* Add some padding for spacing */
 }
 
 .clock {
     margin: 0;
     color: #f6f2f2;
-    font-size: 8px; /* Adjust the font size as needed */
+    font-size: 10px; /* Adjust the font size as needed */
     text-align: center;
     line-height: 1;
     padding: 5px 10px; /* Adjust padding as needed */
