@@ -129,6 +129,10 @@ p {
     cursor: pointer;
 }
 
+.dark-text {
+    color: #000; /* Text color for the word "Dark" (black) */
+}
+
 .copyright {
     text-align: center;
     margin-top: 50px;
