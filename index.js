@@ -55,8 +55,8 @@ function updateTime() {
     var finlandTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Helsinki"});
     var userLocationTime = new Date().toLocaleString(); // User's local time by default
 
-    document.getElementById("finlandTime").textContent = "Finland Time: " + finlandTime;
-    document.getElementById("userLocationTime").textContent = "Your Local Time: " + userLocationTime;
+    document.getElementById("finlandTime").textContent = "Finland Date & Time: " + finlandTime;
+    document.getElementById("userLocationTime").textContent = "Your Local Date & Time: " + userLocationTime;
 
     setTimeout(updateTime, 1000); // Update time every second
 }
