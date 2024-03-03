@@ -48,3 +48,26 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+// Function to display current time of Finland
+function displayFinlandTime() {
+    const finlandTimeElement = document.getElementById('finlandTime');
+    const finlandTime = new Date().toLocaleString('en-US', { timeZone: 'Europe/Helsinki' });
+    finlandTimeElement.textContent = 'Finland Time: ' + finlandTime;
+}
+
+// Function to display current time of user's location
+function displayUserLocationTime() {
+    const userLocationTimeElement = document.getElementById('userLocationTime');
+    const userLocationTime = new Date().toLocaleString();
+    userLocationTimeElement.textContent = 'Your Location Time: ' + userLocationTime;
+}
+
+// Call the functions when DOM content is loaded
+document.addEventListener('DOMContentLoaded', function () {
+   // fetchVisitorCount();
+    displayFinlandTime();
+    displayUserLocationTime();
+});
+
