@@ -50,24 +50,17 @@ function topFunction() {
 }
 
 
-// Function to display current time of Finland
-function displayFinlandTime() {
-    const finlandTimeElement = document.getElementById('finlandTime');
-    const finlandTime = new Date().toLocaleString('en-US', { timeZone: 'Europe/Helsinki' });
-    finlandTimeElement.textContent = 'Finland Time: ' + finlandTime;
+// Function to display current time of Finland and local time
+function updateTime() {
+    var finlandTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Helsinki"});
+    var userLocationTime = new Date().toLocaleString(); // User's local time by default
+
+    document.getElementById("finlandTime").textContent = "Finland Time: " + finlandTime;
+    document.getElementById("userLocationTime").textContent = "Your Local Time: " + userLocationTime;
+
+    setTimeout(updateTime, 1000); // Update time every second
 }
 
-// Function to display current time of user's location
-function displayUserLocationTime() {
-    const userLocationTimeElement = document.getElementById('userLocationTime');
-    const userLocationTime = new Date().toLocaleString();
-    userLocationTimeElement.textContent = 'Your Location Time: ' + userLocationTime;
-}
+updateTime(); // Initial call to start updating time
 
-// Call the functions when DOM content is loaded
-document.addEventListener('DOMContentLoaded', function () {
-   // fetchVisitorCount();
-    displayFinlandTime();
-    displayUserLocationTime();
-});
 
