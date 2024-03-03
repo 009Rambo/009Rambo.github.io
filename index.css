@@ -54,6 +54,13 @@ h1 {
     color: #31c467;
 }
 
+p {
+    margin-bottom: 0;
+    color: #f6f2f2;
+    text-align: justify;
+    line-height: 1;
+}
+
 h2 {
     margin-top: 10px;
     font-weight: lighter;
