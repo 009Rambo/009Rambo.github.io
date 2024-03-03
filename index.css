@@ -164,6 +164,10 @@ body.dark-mode {
         color: #f6f2f2;
         text-align: justify;
     }
+
+    .rounded-text {
+        border: #fff;
+    }
 }
 
 
