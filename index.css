@@ -133,6 +133,10 @@ p {
     cursor: pointer;
 }
 
+.backToTopBtn {
+    cursor: pointer;
+}
+
 .dark-text {
     color: #000; /* Text color for the word "Dark" (black) */
 }
