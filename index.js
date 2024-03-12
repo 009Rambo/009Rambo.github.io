@@ -52,7 +52,7 @@ function topFunction() {
 
 // Function to display current time of Finland and local time
 function updateTime() {
-    var finlandTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Helsinki", day: "2-digit", month: "2-digit", year: "numeric"});
+    var finlandTime = new Date().toLocaleString("en-US", {timeZone: "Europe/Helsinki",});
     var userLocationTime = new Date().toLocaleString(); // User's local time by default
 
     document.getElementById("finlandTime").textContent = "Finland Date & Time: " + finlandTime;
